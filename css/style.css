@@ -1,0 +1,19 @@
+html {
+  color-scheme: dark;
+  scrollbar-color: #686868 #424242;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #b2bfc4;
+  background: #272a2e;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.resizeUnit {
+  max-width: 40px;
+}
