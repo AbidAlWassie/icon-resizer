@@ -5,11 +5,13 @@ html {
 }
 
 body {
+  margin: 0;
   color: #b2bfc4;
   background: #272a2e;
 }
 
 .container {
+  margin: 16px;
   display: flex;
   justify-content: center;
 }
@@ -17,3 +19,5 @@ body {
 .resizeUnit {
   max-width: 40px;
 }
+
+.primaryBtn {}
