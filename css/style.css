@@ -21,3 +21,19 @@ body {
 }
 
 .primaryBtn {}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.resizer__canvas {
+  image-rendering: pixelated;
+  max-width: 200px;
+  max-height: 200px;
+}
