@@ -1,11 +1,11 @@
-const fileInput = document.querySelector(".resizer__file");
-const widthInput = document.querySelector(".resizer__input--width");
-const heightInput = document.querySelector(".resizer__input--height");
-const aspectToggle = document.querySelector(".resizer__aspect");
-const canvas = document.querySelector(".resizer__canvas");
+const fileInput = document.querySelector(".resizerImg");
+const widthInput = document.querySelector(".resizeUnit.width");
+const heightInput = document.querySelector(".resizeUnit.height");
+const aspectToggle = document.querySelector(".keepAspect");
+const canvas = document.querySelector(".resizeCanvas");
 const canvasCtx = canvas.getContext("2d");
 
-let activeImage, originalWidthToHeightRatio;
+let activeImage, initialImageRatio;
 
 fileInput.addEventListener("change", (e) => {
   const reader = new FileReader();
@@ -17,37 +17,37 @@ fileInput.addEventListener("change", (e) => {
   reader.readAsDataURL(e.target.files[0]);
 });
 
-widthInput.addEventListener("change", () => {
-  if (!activeImage) return;
-
-  const heightValue = aspectToggle.checked
-    ? widthInput.value / originalWidthToHeightRatio
-    : heightInput.value;
-
-  resize(widthInput.value, heightValue);
-});
-
-heightInput.addEventListener("change", () => {
-  if (!activeImage) return;
-
-  const widthValue = aspectToggle.checked
-    ? heightInput.value * originalWidthToHeightRatio
-    : widthInput.value;
-
-  resize(widthValue, heightInput.value);
-});
-
 function openImage(imageSrc) {
   activeImage = new Image();
 
   activeImage.addEventListener("load", () => {
-    originalWidthToHeightRatio = activeImage.width / activeImage.height;
+    initialImageRatio = activeImage.width / activeImage.height;
 
     resize(activeImage.width, activeImage.height);
   });
 
   activeImage.src = imageSrc;
 }
+
+widthInput.addEventListener("change", () => {
+  // if (!activeImage) return;
+
+  const heightValue = aspectToggle.checked
+    ? widthInput.value / initialImageRatio
+    : heightInput.value;
+
+  resize(widthInput.value, heightValue);
+});
+
+heightInput.addEventListener("change", () => {
+  // if (!activeImage) return;
+
+  const widthValue = aspectToggle.checked
+    ? heightInput.value * initialImageRatio
+    : widthInput.value;
+
+  resize(widthValue, heightInput.value);
+});
 
 function resize(width, height) {
   canvas.width = Math.floor(width);

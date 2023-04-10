@@ -6,29 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/resize.js" defer></script>
+  <script src="js/preset.js" defer></script>
   <title>icon resizer</title>
 </head>
 
 <body>
 
-  <div class="upload container">
+  <!-- <div class="upload container">
     <input type="file" class="resizer__file">
     <label>
       <input type="checkbox" class="resizer__aspect" checked>
       Keep Aspect Ratio
     </label>
-  </div>
+  </div> -->
 
   <div class="preset container">
-    <label for="colors">Select a preset:</label>
-    <select id="colors" name="colors">
-      <option value="green">Desktop</option>
-      <option value="red">Android</option>
-      <option value="blue">IOS</option>
+    <label for="icons">Select a preset:</label>
+    <select id="icons" name="icons">
+      <option value="desktop">Desktop</option>
+      <option value="android">Android</option>
+      <option value="ios">iOS</option>
     </select>
     <input type="number" id="inputField">
-    <button class="primaryBtn" id="addBtn">Add Elements</button>
+    <button class="primaryBtn" id="addBtn">Add More</button>
     <!-- <button>Create Preset</button> -->
   </div>
 

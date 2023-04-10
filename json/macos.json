@@ -1,0 +1,49 @@
+{
+  "sizes": [
+    {
+      "name": "16.png",
+      "width": 16,
+      "height": 16
+    },
+    {
+      "name": "22.png",
+      "width": 22,
+      "height": 22
+    },
+    {
+      "name": "24.png",
+      "width": 24,
+      "height": 24
+    },
+    {
+      "name": "32.png",
+      "width": 32,
+      "height": 32
+    },
+    {
+      "name": "48.png",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "name": "64.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "name": "128.png",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "name": "256.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "512.png",
+      "width": 512,
+      "height": 512
+    }
+  ]
+}

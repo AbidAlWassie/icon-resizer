@@ -1,0 +1,74 @@
+{
+  "sizes": [
+    {
+      "name": "60.png",
+      "width": 60,
+      "height": 60
+    },
+    {
+      "name": "60@2x.png",
+      "width": 120,
+      "height": 120
+    },
+    {
+      "name": "60@3x.png",
+      "width": 180,
+      "height": 180
+    },
+    {
+      "name": "76.png",
+      "width": 76,
+      "height": 76
+    },
+    {
+      "name": "76@2x.png",
+      "width": 152,
+      "height": 152
+    },
+    {
+      "name": "83.5@2x.png",
+      "width": 167,
+      "height": 167
+    },
+    {
+      "name": "small.png",
+      "width": 29,
+      "height": 29
+    },
+    {
+      "name": "small@2x.png",
+      "width": 58,
+      "height": 58
+    },
+    {
+      "name": "small@3x.png",
+      "width": 87,
+      "height": 87
+    },
+    {
+      "name": "40.png",
+      "width": 40,
+      "height": 40
+    },
+    {
+      "name": "40@2x.png",
+      "width": 80,
+      "height": 80
+    },
+    {
+      "name": "40@3x.png",
+      "width": 120,
+      "height": 120
+    },
+    {
+      "name": "icon.png",
+      "width": 57,
+      "height": 57
+    },
+    {
+      "name": "icon@2x.png",
+      "width": 114,
+      "height": 114
+    }
+  ]
+}

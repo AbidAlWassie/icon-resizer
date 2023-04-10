@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/preset.js" defer></script>
+  <!-- <script src="js/preset.js" defer></script> -->
   <script src="js/resize.js" defer></script>
   <title>icon resizer</title>
 </head>
@@ -14,38 +14,43 @@
 <body>
 
   <!-- <div class="upload container">
-    <input type="file" class="resizer__file">
+    <input type="file" class="resizerImg">
     <label>
-      <input type="checkbox" class="resizer__aspect" checked>
+      <input type="checkbox" class="keepAspect" checked>
       Keep Aspect Ratio
     </label>
   </div> -->
 
-  <div class="resizer container flex-col">
-    <input type="file" class="resizer__file">
-    <div class="dimensions">
-      <input type="text" class="resizer__input resizer__input--width" value="0">
-      x
-      <input type="text" class="resizer__input resizer__input--height" value="0">
-      <label>
-        <input type="checkbox" class="resizer__aspect" checked>
-        Keep Aspect Ratio
-      </label>
-    </div>
-    <canvas class="resizer__canvas" width="200" height="200"></canvas>
+  <div class="preset container">
+    <label for="icons">Select a preset:</label>
+    <select id="icons" name="icons">
+      <option value="desktop">Desktop</option>
+      <option value="android">Android</option>
+      <option value="ios">iOS</option>
+    </select>
+    <!-- <input type="number" id="inputField" placeholder="number of icons">
+    <button class="primaryBtn" id="addBtn">Add Size</button>
+    <button>Create Preset</button> -->
   </div>
 
-  <div class="preset container">
-    <label for="colors">Select a preset:</label>
-    <select id="colors" name="colors">
-      <option value="green">Desktop</option>
-      <option value="red">Android</option>
-      <option value="blue">IOS</option>
-    </select>
-    <input type="number" id="inputField" placeholder="number of icons">
-    <button class="primaryBtn" id="addBtn">Add Size</button>
-    <!-- <button>Create Preset</button> -->
+  <div class="resizer container">
+    <input type="file" class="resizerImg">
   </div>
+
+  <div class="container dimensions">
+    <input type="text" class="resizeUnit width" value="0">
+    x
+    <input type="text" class="resizeUnit height" value="0">
+    <label>
+      <input type="checkbox" class="keepAspect" checked>
+      Keep Aspect Ratio
+    </label>
+  </div>
+
+  <div class="container output">
+    <canvas class="resizeCanvas" width="200" height="200"></canvas>
+  </div>
+
 
   <div class="presetValues container">
     <div id="resizeOptions">
@@ -53,7 +58,7 @@
   </div>
 
   <!-- <div class="output container">
-    <canvas class="resizer__canvas" width="500" height="500"></canvas>
+    <canvas class="resizeCanvas" width="500" height="500"></canvas>
   </div> -->
 
 </body>
