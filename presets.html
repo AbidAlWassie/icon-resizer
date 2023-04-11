@@ -12,13 +12,13 @@
 
 <body>
 
-  <!-- <div class="upload container">
-    <input type="file" class="resizer__file">
+  <div class="upload container">
+    <input type="file" class="resizerFile">
     <label>
-      <input type="checkbox" class="resizer__aspect" checked>
+      <input type="checkbox" class="resizerAspect" checked>
       Keep Aspect Ratio
     </label>
-  </div> -->
+  </div>
 
   <div class="preset container">
     <label for="icons">Select a preset:</label>
@@ -27,20 +27,29 @@
       <option value="ios">iOS</option>
       <option value="desktop">Desktop</option>
       <option value="linux">Linux</option>
-      <option value="macos">Macos</option>
+      <option value="macos">macOS</option>
+      <!-- <option value="none">None</option> -->
     </select>
-    <input type="number" id="inputField">
-    <button class="primaryBtn" id="addBtn">Add More</button>
-    <!-- <button>Create Preset</button> -->
   </div>
+
+  <!-- <div class="customPreset container">
+    <input type="number" id="inputField" placeholder="add size">
+    <button class="primaryBtn" id="addBtn">Add More</button>
+    <button>Create Preset</button>
+  </div> -->
+
 
   <div class="presetValues container">
     <div id="resizeOptions"></div>
   </div>
 
-  <div class="output container">
-    <canvas class="resizer__canvas" width="500" height="500"></canvas>
+  <div class="downloadImg container">
+    <button onclick="resizeAndDownload()">Download</button>
   </div>
+
+  <!-- <div class="output container">
+    <canvas class="resizedImgCanvas" width="500" height="500"></canvas>
+  </div> -->
 
 
 

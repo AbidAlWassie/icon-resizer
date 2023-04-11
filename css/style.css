@@ -10,6 +10,21 @@ body {
   background: #272a2e;
 }
 
+input {
+  /* background: #27303b; */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .container {
   margin: 16px;
   display: flex;
@@ -32,8 +47,45 @@ body {
   flex-direction: row;
 }
 
-.resizer__canvas {
+.resizeUnits {
+  margin: 12px 16px;
+  padding: 6px 10px;
+  background: #394f6b;
+  display: flex;
+  border-radius: 5px;
+}
+
+.resizeUnit {
+  text-align: center;
+  width: 32px;
+  height: 20px;
+  margin: 0 2px;
+}
+
+.resizedImgCanvas {
   image-rendering: pixelated;
   max-width: 200px;
   max-height: 200px;
+}
+
+input,
+textarea {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  /* padding: 2px 4px; */
+}
+
+input:focus {
+  border: 2px solid dodgerblue;
+}
+
+#inputField {
+  max-width: 50px;
+  margin: 0 6px;
+}
+
+.placeholderImg {
+  width: 24px;
+  height: 24px;
+  /* margin: 10px 0 0 0; */
 }
