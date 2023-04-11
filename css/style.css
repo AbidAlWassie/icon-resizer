@@ -46,6 +46,11 @@ input[type=number] {
   margin: 0 auto;
 }
 
+.navbar {
+  padding: 0 !important;
+  min-height: 0 !important;
+}
+
 .resizeUnit {
   max-width: 40px;
 }
