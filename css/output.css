@@ -3066,31 +3066,26 @@ html {
   border-bottom-right-radius: var(--rounded-btn, 0.5rem);
 }
 
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .ml-4 {
   margin-left: 1rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -3113,12 +3108,12 @@ html {
   width: 3.5rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-4 {
   width: 1rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-xs {
@@ -3133,12 +3128,12 @@ html {
   grid-auto-flow: column;
 }
 
-.justify-normal {
-  justify-content: normal;
+.items-center {
+  align-items: center;
 }
 
-.justify-start {
-  justify-content: flex-start;
+.justify-normal {
+  justify-content: normal;
 }
 
 .justify-center {
@@ -3154,6 +3149,10 @@ html {
   background-color: hsl(var(--n) / var(--tw-bg-opacity));
 }
 
+.bg-\[\#\#191d24\] {
+  background-color: ##191d24;
+}
+
 .fill-current {
   fill: currentColor;
 }
@@ -3162,12 +3161,12 @@ html {
   stroke: currentColor;
 }
 
-.p-10 {
-  padding: 2.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
-.align-baseline {
-  vertical-align: baseline;
+.p-10 {
+  padding: 2.5rem;
 }
 
 .align-middle {
@@ -3186,4 +3185,14 @@ html {
 .text-neutral-content {
   --tw-text-opacity: 1;
   color: hsl(var(--nc) / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:place-self-center {
+    place-self: center;
+  }
+
+  .md\:justify-self-end {
+    justify-self: end;
+  }
 }
